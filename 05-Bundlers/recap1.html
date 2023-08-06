@@ -1,0 +1,35 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="numero">Número de Cohorte:</label>
+        <input type="number" id="numero" />
+        <label for="texto">Cédula de Cohorte:</label>
+        <input type="text" id="texto" />
+        <button type="submit">Enviar</button>
+      </form>
+  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+        $('form').submit(function(event){
+            event.preventDefault();
+            $.post(
+                'http',
+                {
+                    id: 1,
+                    body: "Cohorte " + $('#numero').val() + $('#texto')
+                    idUser: $('#texto').val().charCodeAt(0),
+                },
+                function(data){
+                    console.log({...data,idUser: Number(data.idUser)})
+                }
+            )
+        })
+      </script>
+</body>
+</html> -->
